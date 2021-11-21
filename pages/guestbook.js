@@ -30,12 +30,15 @@ export default () => {
             <h1>Guestbook</h1>
             <div className='guest-container'>
             {
+                guests ?
                 guests.map((guest, i) => (
                     <div key={i} className='guest-card'>
                         <h4 className='guest-msg'>"{guest.message}"</h4>
                         <p className='guest'>- {guest.name}</p>
                     </div>
                 ))
+                :
+                <h3>No guests listed yet</h3>
             }
             </div>
         </div>
