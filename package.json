@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "standard",
     "dev": "NODE_ENV=development nodemon ./server",
-    "build": "next build",
+    "build": "next run export",
     "start": "npm i && npm run dev",
-    "export": "next build&& next export",
+    "export": "next build && next export",
     "deploy": "npm build && next export"
   },
   "repository": {
