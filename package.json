@@ -8,7 +8,9 @@
     "lint": "standard",
     "dev": "NODE_ENV=development nodemon ./server",
     "build": "next build",
-    "start": "npm i && npm run dev"
+    "start": "npm i && npm run dev",
+    "export": "next build&& next export",
+    "deploy": "npm build && next export"
   },
   "repository": {
     "type": "git",
