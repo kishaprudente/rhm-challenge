@@ -61,3 +61,5 @@ typings/
 .next
 
 certs/
+# Local Netlify folder
+.netlify
