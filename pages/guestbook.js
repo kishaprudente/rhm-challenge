@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Link from 'next/link'
 import api from "../utils/api";
 
-export default () => {
+const Guestbook = () => {
     const [guests, setGuests] = useState([]);
 
     useEffect(() => {
@@ -44,3 +44,5 @@ export default () => {
         </div>
     )
 }
+
+export default Guestbook;
