@@ -2,9 +2,9 @@ import { useState } from 'react';
 import Link from 'next/link'
 import api from '../utils/api';
 
-import '../style.css';
+// import '../style.css';
 
-export default () => {
+const Index = () => {
   const [guest, setGuest] = useState({
     name: '',
     message: '',
@@ -58,3 +58,5 @@ export default () => {
     </div>
   )
 }
+
+export default Index;

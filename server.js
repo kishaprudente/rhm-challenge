@@ -43,11 +43,11 @@ app.prepare().then(() => {
   //   if (err) throw err
   //   console.log('> Ready on http://localhost:3000')
   // })
-  http.createServer(server).listen(ports.http, () => {
+  http.createServer(server).listen(ports.http, (err) => {
     if (err) throw err
     console.log('> Ready on http://localhost:3000')
   })
-  https.createServer(httpsOptions, server).listen(ports.https, () => {
+  https.createServer(httpsOptions, server).listen(ports.https, (err) => {
     if (err) throw err
     console.log('> Ready on https://localhost:3000')
   })
